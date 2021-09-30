@@ -1,1 +1,92 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 微軟正黑體;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+header,
+section {
+  width: 100vw;
+  height: 100%;
+  background: #000;
+}
+
+header {
+  position: relative;
+  height: 100vh;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 1280px) {
+  header {
+    height: 100vh !important;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  header {
+    height: 80vh !important;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  header {
+    height: 82vh !important;
+  }
+}
+
+header .logo {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  height: 100px;
+  width: 100px;
+  display: block;
+}
+
+@media screen and (max-width: 1280px) {
+  header .logo {
+    height: 100px;
+    width: 100px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  header .logo {
+    height: 100px;
+    width: 100px;
+  }
+}
+
+header .logo img {
+  height: 100px;
+  z-index: 2;
+}
+
+@media screen and (max-width: 1280px) {
+  header .logo img {
+    height: 100px;
+    width: 70px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  header .logo img {
+    height: 100px;
+    width: 70px;
+  }
+}
+
+header .logo img:hover {
+  -webkit-filter: invert(76%) sepia(53%) saturate(3960%) hue-rotate(340deg) brightness(100%) contrast(102%);
+          filter: invert(76%) sepia(53%) saturate(3960%) hue-rotate(340deg) brightness(100%) contrast(102%);
+}
+/*# sourceMappingURL=style.css.map */
