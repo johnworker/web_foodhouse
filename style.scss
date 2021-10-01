@@ -88,4 +88,85 @@ header {
             }
         }
     }
+
+    // 漢堡選單
+    .menu-btn {
+        width: 64px;
+        height: 64px;
+        background: rgba(255, 255, 255, 0);
+        position: fixed;
+        right: 0;
+        top: 0;
+        z-index: 51;
+        padding-top: 18px;
+        transition: background .3s;
+        cursor: pointer;
+
+        &:hover {
+            background: rgba(255, 255, 255, 0);
+        }
+
+        span {
+            display: block;
+            height: 5px;
+            width: 60%;
+            margin: 0 auto;
+            background: rgb(255, 255, 255);
+            opacity: 1;
+            transition: all .3s;  
+            
+            &:not(:last-child) {
+                margin-bottom: 8px;
+            }
+        }
+    }
+    .menu-btn.active span:first-child {
+        transform: rotate(45deg) translate(50%, 50%);
+    }
+    .menu-btn.active span:last-child {
+        transform: rotate(-45deg) translate(40%, 0%);
+    }
+    .menu-btn.active span:not(:first-child):not(:last-child) {
+        opacity: 0;
+    }
+    .menu-wrap {
+        position: fixed;
+        width: 40%;
+        right: -40%;
+        top: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 50;
+        padding: 4rem;
+        transition: right .3s;
+
+        ul {
+            list-style: none;
+            padding: 0 !important;
+            margin: 0 !important;
+            z-index: 50;   
+            
+            li {
+                margin-bottom: 20px;
+                position: relative;
+                z-index: 50;   
+                
+                a{
+                    font-size: 4rem;
+                    padding-bottom: 20px;
+                    color: rgb(100, 100, 100);
+                    text-decoration: none;
+                    transition: color .3s;
+                    z-index: 52;      
+                    
+                    &:hover {
+                        color: red;
+                    }
+                }
+            }
+        }
+    }
+    .menu-wrap.active {
+        right: 0!important;
+    }
 }
