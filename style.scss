@@ -131,6 +131,20 @@ footer {
     }
 }
 
+// 首頁輪播區
+#carouselExampleFade {
+    .carousel-inner {
+        position: relative;
+        width: 50%;
+        overflow: hidden;
+        margin: 0 auto;
+        top: 150px;
+    }
+
+    .carousel-control-prev,.carousel-control-next {
+        display: none;
+    }
+}
 // 聯絡LEO
 
 #list {

@@ -131,6 +131,18 @@ footer small {
   padding: 10px 0;
 }
 
+#carouselExampleFade .carousel-inner {
+  position: relative;
+  width: 50%;
+  overflow: hidden;
+  margin: 0 auto;
+  top: 150px;
+}
+
+#carouselExampleFade .carousel-control-prev, #carouselExampleFade .carousel-control-next {
+  display: none;
+}
+
 #list {
   padding: 100px 0 0;
   color: #fff;
