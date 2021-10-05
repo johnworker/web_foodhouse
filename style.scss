@@ -133,12 +133,14 @@ footer {
 
 // 首頁輪播區
 #carouselExampleFade {
+    top: 150px;
+
     .carousel-inner {
         position: relative;
         width: 50%;
         overflow: hidden;
         margin: 0 auto;
-        top: 150px;
+        top: 0;
     }
 
     .carousel-control-prev,.carousel-control-next {
