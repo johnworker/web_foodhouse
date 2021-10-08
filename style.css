@@ -143,8 +143,15 @@ footer small {
   top: 0;
 }
 
-#carouselExampleFade .carousel-control-prev, #carouselExampleFade .carousel-control-next {
+#carouselExampleFade .carousel-control-prev,
+#carouselExampleFade .carousel-control-next {
   display: none;
+}
+
+.content {
+  margin-top: 15vw;
+  height: 100%;
+  display: block;
 }
 
 .content .product_box {
@@ -160,6 +167,17 @@ footer small {
 .content .product_box .product_list .product_item {
   width: 25%;
   float: left;
+  margin: 0 4% 8% 4%;
+}
+
+.content .product_box .product_list .product_item a {
+  display: block;
+  position: relative;
+}
+
+.content .product_box .product_list .product_item a img {
+  max-width: 100%;
+  height: auto;
 }
 
 #list {

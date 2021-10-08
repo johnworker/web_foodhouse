@@ -15,7 +15,6 @@ $tablet: 1024px; //平板尺寸 (ipad pro)
 $tablets: 960px; //平板尺寸 (ipad)
 $mobile: 767px; //手機尺寸
 
-
 * {
     margin: 0;
     padding: 0;
@@ -143,13 +142,17 @@ footer {
         top: 0;
     }
 
-    .carousel-control-prev,.carousel-control-next {
+    .carousel-control-prev,
+    .carousel-control-next {
         display: none;
     }
 }
 
 // 首頁的產品區
 .content {
+    margin-top: 15vw;
+    height: 100%;
+    display: block;
 
     .product_box {
         width: 100%;
@@ -162,6 +165,17 @@ footer {
             .product_item {
                 width: 25%;
                 float: left;
+                margin: 0 4% 8% 4%;
+
+                a {
+                    display: block;
+                    position: relative;
+
+                    img {
+                        max-width: 100%;
+                        height: auto;
+                    }
+                }
             }
         }
     }
