@@ -97,10 +97,6 @@ footer {
   width: 100vw;
 }
 
-footer .logo {
-  height: 70px;
-}
-
 footer .logo img {
   height: 70px;
 }
@@ -149,14 +145,22 @@ footer small {
 }
 
 .content {
-  margin-top: 15vw;
-  height: 100%;
+  height: 140vh;
   display: block;
 }
 
 .content .product_box {
   width: 100%;
   position: relative;
+}
+
+.content .product_box h2 {
+  text-align: center;
+}
+
+.content .product_box p {
+  text-align: center;
+  margin-bottom: 0;
 }
 
 .content .product_box .product_list {

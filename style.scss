@@ -97,7 +97,6 @@ footer {
     width: 100vw;
 
     .logo {
-        height: 70px;
 
         img {
             height: 70px;
@@ -150,13 +149,21 @@ footer {
 
 // 首頁的產品區
 .content {
-    margin-top: 15vw;
-    height: 100%;
+    height: 140vh;
     display: block;
 
     .product_box {
         width: 100%;
         position: relative;
+
+        h2 {
+            text-align: center;
+        }
+
+        p {
+            text-align: center;
+            margin-bottom: 0;
+        }
 
         .product_list {
             width: 100%;
