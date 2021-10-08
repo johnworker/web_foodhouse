@@ -147,6 +147,25 @@ footer {
         display: none;
     }
 }
+
+// 首頁的產品區
+.content {
+
+    .product_box {
+        width: 100%;
+        position: relative;
+
+        .product_list {
+            width: 100%;
+            margin: 0 auto;
+
+            .product_item {
+                width: 25%;
+                float: left;
+            }
+        }
+    }
+}
 // 聯絡LEO
 
 #list {

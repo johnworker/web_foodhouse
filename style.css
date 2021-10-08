@@ -147,6 +147,21 @@ footer small {
   display: none;
 }
 
+.content .product_box {
+  width: 100%;
+  position: relative;
+}
+
+.content .product_box .product_list {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.content .product_box .product_list .product_item {
+  width: 25%;
+  float: left;
+}
+
 #list {
   padding: 100px 0 0;
   color: #fff;
