@@ -16,7 +16,7 @@ header,
 section {
   width: 100vw;
   height: 100%;
-  background: #000;
+  background: #afbeff;
 }
 
 header {
@@ -47,40 +47,40 @@ header .logo {
   position: absolute;
   top: 30px;
   left: 30px;
-  height: 100px;
-  width: 100px;
+  height: 80px;
+  width: 80px;
   display: block;
 }
 
 @media screen and (max-width: 1280px) {
   header .logo {
-    height: 100px;
-    width: 100px;
+    height: 80px;
+    width: 80px;
   }
 }
 
 @media screen and (max-width: 767px) {
   header .logo {
-    height: 100px;
-    width: 100px;
+    height: 80px;
+    width: 80px;
   }
 }
 
 header .logo img {
-  height: 100px;
+  height: 80px;
   z-index: 2;
 }
 
 @media screen and (max-width: 1280px) {
   header .logo img {
-    height: 100px;
+    height: 80px;
     width: 70px;
   }
 }
 
 @media screen and (max-width: 767px) {
   header .logo img {
-    height: 100px;
+    height: 80px;
     width: 70px;
   }
 }
@@ -91,7 +91,7 @@ header .logo img:hover {
 }
 
 footer {
-  background: rgba(0, 0, 0, 0.9);
+  background: rgba(255, 175, 175, 0.7);
   padding: 20px;
   text-align: center;
   width: 100vw;
@@ -108,7 +108,7 @@ footer .logo img:hover {
 
 footer p {
   text-align: center;
-  color: white;
+  color: black;
   padding: 10px 0;
 }
 
@@ -123,7 +123,7 @@ footer .social img {
 
 footer small {
   text-align: center;
-  color: white;
+  color: black;
   padding: 10px 0;
 }
 
@@ -156,11 +156,16 @@ footer small {
 
 .content .product_box h2 {
   text-align: center;
+  color: black;
+  font-weight: 900;
 }
 
 .content .product_box p {
   text-align: center;
   margin-bottom: 0;
+  color: black;
+  font-weight: 600;
+  padding: 20px;
 }
 
 .content .product_box .product_list {
