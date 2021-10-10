@@ -152,8 +152,9 @@ footer {
 
 // 首頁的產品區
 .content {
-    height: 220vh;
+    height: 230vh;
     display: block;
+    padding-top: 100px;
 
     .product_explanation {
         width: 100%;
@@ -183,6 +184,16 @@ footer {
                 position: absolute;
                 width: 35%;
                 left: 100px;
+                box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+            }
+
+            .caketwo {
+                opacity: 1;
+                transition: 0.5s;
+
+                &:hover {
+                    opacity: 0;
+                }
             }
         }
     }
