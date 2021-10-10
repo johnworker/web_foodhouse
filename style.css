@@ -97,11 +97,16 @@ footer {
   width: 100vw;
 }
 
-footer .logo img {
+footer .logos {
+  display: block;
+  margin: 0 auto;
+}
+
+footer .logos img {
   height: 70px;
 }
 
-footer .logo img:hover {
+footer .logos img:hover {
   -webkit-filter: invert(0%) sepia(0%) saturate(4232%) hue-rotate(41deg) brightness(91%) contrast(103%);
           filter: invert(0%) sepia(0%) saturate(4232%) hue-rotate(41deg) brightness(91%) contrast(103%);
 }
@@ -145,13 +150,48 @@ footer small {
 }
 
 .content {
-  height: 140vh;
+  height: 220vh;
   display: block;
+}
+
+.content .product_explanation {
+  width: 100%;
+  position: relative;
+  height: 50vh;
+}
+
+.content .product_explanation h2 {
+  position: absolute;
+  right: 100px;
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  font-weight: 900;
+}
+
+.content .product_explanation p {
+  position: absolute;
+  right: 200px;
+  width: 40%;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.content .product_explanation .makecake {
+  width: 100%;
+  position: relative;
+}
+
+.content .product_explanation .makecake img {
+  position: absolute;
+  width: 35%;
+  left: 100px;
 }
 
 .content .product_box {
   width: 100%;
   position: relative;
+  margin-top: 150px;
 }
 
 .content .product_box h2 {

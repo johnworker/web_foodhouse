@@ -97,7 +97,9 @@ footer {
     text-align: center;
     width: 100vw;
 
-    .logo {
+    .logos {
+        display: block;
+        margin: 0 auto;
 
         img {
             height: 70px;
@@ -150,12 +152,45 @@ footer {
 
 // 首頁的產品區
 .content {
-    height: 140vh;
+    height: 220vh;
     display: block;
+
+    .product_explanation {
+        width: 100%;
+        position: relative;
+        height: 50vh;
+
+        h2 {
+            position: absolute;
+            right: 100px;
+            writing-mode: vertical-rl;
+            font-weight: 900;
+        }
+
+        p {
+            position: absolute;
+            right: 200px;
+            width: 40%;
+            font-size: 16px;
+            line-height: 1.7;
+        }
+
+        .makecake {
+            width: 100%;
+            position: relative;
+
+            img {
+                position: absolute;
+                width: 35%;
+                left: 100px;
+            }
+        }
+    }
 
     .product_box {
         width: 100%;
         position: relative;
+        margin-top: 150px;
 
         h2 {
             text-align: center;
