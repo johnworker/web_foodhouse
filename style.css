@@ -132,8 +132,72 @@ footer small {
   padding: 10px 0;
 }
 
+.snack_animate {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.snack_animate::before {
+  background-image: url(./img/snackone.png);
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.snack_animate::after {
+  background-image: url(./img/snacktwo.png);
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0;
+  -webkit-animation: 1s cakeshake steps(1) infinite alternate;
+          animation: 1s cakeshake steps(1) infinite alternate;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes cakeshake {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes cakeshake {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
 #carouselExampleFade {
-  top: 150px;
+  bottom: 80%;
 }
 
 #carouselExampleFade .carousel-inner {
