@@ -48,7 +48,7 @@ header .logo {
   top: 30px;
   left: 30px;
   height: 80px;
-  width: 80px;
+  width: 60px;
   display: block;
   z-index: 1;
 }
@@ -377,6 +377,66 @@ footer small {
 .content .product_box .product_list .product_item a img {
   max-width: 100%;
   height: auto;
+}
+
+.productpage {
+  height: 300vh;
+}
+
+.article_box {
+  position: relative;
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-top: 80px;
+  width: 100%;
+}
+
+.article_box .product_show {
+  padding-top: 50px;
+  width: 100%;
+  display: block;
+}
+
+.article_box .product_show .product_item {
+  width: 46%;
+  display: block;
+  margin-bottom: 100px;
+}
+
+.article_box .product_show .product_item:nth-child(odd) {
+  float: left;
+}
+
+.article_box .product_show .product_item:nth-child(even) {
+  float: right;
+}
+
+.article_box .product_show .product_item a {
+  display: block;
+  width: 100%;
+  background-color: rgba(255, 175, 175, 0.7);
+  margin-bottom: 2em;
+  padding-bottom: 2em;
+  color: #000;
+  text-decoration: none;
+}
+
+.article_box .product_show .product_item a:hover {
+  text-decoration: none;
+}
+
+.article_box .product_show .product_item a img {
+  max-width: 100%;
+  height: auto;
+}
+
+.article_box .product_show .product_item a h3 {
+  padding: 0 10%;
+  margin-bottom: 1rem;
+}
+
+.article_box .product_show .product_item a p {
+  padding: 0 10%;
 }
 
 #list {

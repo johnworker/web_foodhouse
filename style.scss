@@ -5,6 +5,7 @@ $color-grey: grey;
 $color-black: black;
 $text-shadow: 10px 10px 10px rgb(255, 0, 0);
 $fashion-shadow: 2px 10px 14px rgba(0, 0, 0, 0.5);
+$pink: rgba(255, 175, 175, 0.7);
 $red: red;
 $blue: blue;
 $green: green;
@@ -56,7 +57,7 @@ header {
         top: 30px;
         left: 30px;
         height: 80px;
-        width: 80px;
+        width: 60px;
         display: block;
         z-index: 1;
 
@@ -167,20 +168,20 @@ footer {
         background-size: cover;
         background-repeat: no-repeat;
         opacity: 0;
-        animation:1s cakeshake steps(1) infinite alternate;
+        animation: 1s cakeshake steps(1) infinite alternate;
         animation-fill-mode: forwards;
 
         @keyframes cakeshake {
             0% {
-              opacity: 0;
+                opacity: 0;
             }
             50% {
                 opacity: 1;
             }
             100% {
                 opacity: 0;
-            }  
-        }    
+            }
+        }
     }
 }
 
@@ -357,6 +358,67 @@ footer {
         }
     }
 }
+
+// 商品介紹區
+.productpage {
+    height: 300vh;
+}
+.article_box {
+    position: relative;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 80px;
+    width: 100%;
+
+    .product_show {
+        padding-top: 50px;
+        width: 100%;
+        display: block;
+
+        .product_item {
+            width: 46%;
+            display: block;
+            margin-bottom: 100px;
+
+            &:nth-child(odd) {
+                float: left;
+            }
+
+            &:nth-child(even) {
+                float: right;
+            }
+
+            a {
+                display: block;
+                width: 100%;
+                background-color: $pink;
+                margin-bottom: 2em;
+                padding-bottom: 2em;
+                color: #000;
+                text-decoration: none;
+
+                &:hover {
+                    text-decoration: none;
+                }
+
+                img {
+                    max-width: 100%;
+                    height: auto;
+                }
+
+                h3 {
+                    padding: 0 10%;
+                    margin-bottom: 1rem;
+                }
+
+                p {
+                    padding: 0 10%;
+                }
+            }
+        }
+    }
+}
+
 // 聯絡LEO
 
 #list {
