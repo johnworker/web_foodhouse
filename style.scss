@@ -58,6 +58,7 @@ header {
         height: 80px;
         width: 80px;
         display: block;
+        z-index: 1;
 
         @media screen and (max-width: $desk) {
             height: 80px;
