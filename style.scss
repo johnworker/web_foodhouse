@@ -364,7 +364,6 @@ footer {
     height: 200vh;
 }
 .article_box {
-    position: relative;
     padding-left: 80px;
     padding-right: 80px;
     padding-top: 80px;
@@ -426,15 +425,17 @@ footer {
 .text_link {
     display: block;
     position: absolute;
+    width: 46%;
 
     a {
         text-decoration: none;
         padding: 0 12%;
         font-weight: 600;
+        transition: 0.5s;
 
         &:hover {
             text-decoration: none;
-            font-size: 16px;
+            font-size: 20px;
         }
     }
 }
