@@ -361,7 +361,7 @@ footer {
 
 // 商品介紹區
 .productpage {
-    height: 300vh;
+    height: 200vh;
 }
 .article_box {
     position: relative;
@@ -374,6 +374,7 @@ footer {
         padding-top: 50px;
         width: 100%;
         display: block;
+        position: relative;
 
         .product_item {
             width: 46%;
@@ -392,8 +393,8 @@ footer {
                 display: block;
                 width: 100%;
                 background-color: $pink;
-                margin-bottom: 2em;
-                padding-bottom: 2em;
+                margin-bottom: 0;
+                padding-bottom: 2px;
                 color: #000;
                 text-decoration: none;
 
@@ -402,8 +403,10 @@ footer {
                 }
 
                 img {
-                    max-width: 100%;
+                    max-width: 60%;
                     height: auto;
+                    display: block;
+                    margin: 0 auto;
                 }
 
                 h3 {
@@ -415,6 +418,23 @@ footer {
                     padding: 0 10%;
                 }
             }
+        }
+    }
+}
+
+
+.text_link {
+    display: block;
+    position: absolute;
+
+    a {
+        text-decoration: none;
+        padding: 0 12%;
+        font-weight: 600;
+
+        &:hover {
+            text-decoration: none;
+            font-size: 16px;
         }
     }
 }

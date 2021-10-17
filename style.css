@@ -380,13 +380,13 @@ footer small {
 }
 
 .productpage {
-  height: 300vh;
+  height: 200vh;
 }
 
 .article_box {
   position: relative;
-  padding-left: 60px;
-  padding-right: 60px;
+  padding-left: 80px;
+  padding-right: 80px;
   padding-top: 80px;
   width: 100%;
 }
@@ -395,6 +395,7 @@ footer small {
   padding-top: 50px;
   width: 100%;
   display: block;
+  position: relative;
 }
 
 .article_box .product_show .product_item {
@@ -415,8 +416,8 @@ footer small {
   display: block;
   width: 100%;
   background-color: rgba(255, 175, 175, 0.7);
-  margin-bottom: 2em;
-  padding-bottom: 2em;
+  margin-bottom: 0;
+  padding-bottom: 2px;
   color: #000;
   text-decoration: none;
 }
@@ -426,8 +427,10 @@ footer small {
 }
 
 .article_box .product_show .product_item a img {
-  max-width: 100%;
+  max-width: 60%;
   height: auto;
+  display: block;
+  margin: 0 auto;
 }
 
 .article_box .product_show .product_item a h3 {
@@ -437,6 +440,22 @@ footer small {
 
 .article_box .product_show .product_item a p {
   padding: 0 10%;
+}
+
+.text_link {
+  display: block;
+  position: absolute;
+}
+
+.text_link a {
+  text-decoration: none;
+  padding: 0 12%;
+  font-weight: 600;
+}
+
+.text_link a:hover {
+  text-decoration: none;
+  font-size: 16px;
 }
 
 #list {
