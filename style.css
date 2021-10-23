@@ -91,48 +91,6 @@ header .logo img:hover {
           filter: invert(76%) sepia(53%) saturate(3960%) hue-rotate(340deg) brightness(100%) contrast(102%);
 }
 
-footer {
-  background: rgba(255, 175, 175, 0.7);
-  padding: 20px;
-  text-align: center;
-  width: 100vw;
-}
-
-footer .logos {
-  display: block;
-  margin: 0 auto;
-}
-
-footer .logos img {
-  height: 70px;
-}
-
-footer .logos img:hover {
-  -webkit-filter: invert(0%) sepia(0%) saturate(4232%) hue-rotate(41deg) brightness(91%) contrast(103%);
-          filter: invert(0%) sepia(0%) saturate(4232%) hue-rotate(41deg) brightness(91%) contrast(103%);
-}
-
-footer p {
-  text-align: center;
-  color: black;
-  padding: 10px 0;
-}
-
-footer .social {
-  text-align: center;
-  padding: 5px;
-}
-
-footer .social img {
-  margin: 5px;
-}
-
-footer small {
-  text-align: center;
-  color: black;
-  padding: 10px 0;
-}
-
 .snack_animate {
   position: relative;
   width: 100%;
@@ -360,7 +318,7 @@ footer small {
 }
 
 .content .product_box .product_list {
-  width: 96%;
+  width: 90%;
   margin: 0 auto;
 }
 
@@ -377,6 +335,62 @@ footer small {
 .content .product_box .product_list .product_item a img {
   max-width: 100%;
   height: auto;
+}
+
+#gotop {
+  position: absolute;
+  display: none;
+  width: 50px;
+  height: 50px;
+  background-color: #5f717e00;
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  padding: 5px;
+  cursor: pointer;
+  z-index: 99999;
+}
+
+footer {
+  background: rgba(255, 175, 175, 0.7);
+  padding: 20px;
+  text-align: center;
+  width: 100vw;
+}
+
+footer .logos {
+  display: block;
+  margin: 0 auto;
+}
+
+footer .logos img {
+  height: 70px;
+}
+
+footer .logos img:hover {
+  -webkit-filter: invert(0%) sepia(0%) saturate(4232%) hue-rotate(41deg) brightness(91%) contrast(103%);
+          filter: invert(0%) sepia(0%) saturate(4232%) hue-rotate(41deg) brightness(91%) contrast(103%);
+}
+
+footer p {
+  text-align: center;
+  color: black;
+  padding: 10px 0;
+}
+
+footer .social {
+  text-align: center;
+  padding: 5px;
+}
+
+footer .social img {
+  margin: 5px;
+}
+
+footer small {
+  text-align: center;
+  color: black;
+  padding: 10px 0;
 }
 
 .productpage {
@@ -445,19 +459,32 @@ footer small {
   display: block;
   position: absolute;
   width: 46%;
+  padding: 12px;
 }
 
-.text_link a {
+.text_link button {
+  width: 200px;
+}
+
+.text_link button a {
   text-decoration: none;
   padding: 0 12%;
   font-weight: 600;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+  font-size: 20px;
+  background-color: #ffffaf !important;
+  -webkit-box-shadow: 5px 5px 20px;
+          box-shadow: 5px 5px 20px;
 }
 
-.text_link a:hover {
+.text_link button a:hover {
   text-decoration: none;
-  font-size: 20px;
+  font-weight: 900;
+  font-size: 24px;
+  background-color: #c8ffaf !important;
+  -webkit-box-shadow: 2px 2px 5px black;
+          box-shadow: 2px 2px 5px black;
 }
 
 .shop {
@@ -473,7 +500,7 @@ footer small {
 }
 
 .shop .container .shoptitle {
-  font-family: minion-pro, serif;
+  font-family: "minion-pro", serif;
   font-weight: 500;
   font-style: normal;
   font-size: 70px;
@@ -519,6 +546,82 @@ footer small {
 .shop .container .shopcontents .shop_info {
   width: 40%;
   margin-left: 50px;
+}
+
+.shop .container .shopcontents .shop_info .shop_detail {
+  color: black;
+}
+
+.shop .container .shopcontents .shop_info .shop_detail .name {
+  font-family: "Noto Serif", serif;
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 1;
+  letter-spacing: 8px;
+  margin-bottom: 80px;
+}
+
+.shop .container .shopcontents .shop_info .shop_detail .active {
+  font-family: "Noto Serif", serif;
+  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.shop .container .shopcontents .shop_info .shop_detail .adress {
+  font-family: "Noto Serif JP", serif;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.shop .container .shopcontents .shop_link {
+  margin-top: 200px;
+}
+
+.shop .container .shopcontents .shop_link .click_btn {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  width: 190px;
+  height: 44px;
+  border-radius: 22px;
+  font-family: "minion-pro", serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 1;
+  color: black;
+  background-color: rgba(255, 175, 175, 0.7);
+  text-decoration: none;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.shop .container .shopcontents .shop_link .click_btn:hover {
+  font-size: 20px;
+}
+
+.shop .container .shopcontents .shop_link .click_btn p {
+  vertical-align: inherit;
+  margin-bottom: 0;
+}
+
+.shop .container .shopcontents .shop_link .click_btn .search {
+  display: block;
+  width: 20px;
+  height: 20px;
+  padding-left: 5px;
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 #list {
