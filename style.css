@@ -624,6 +624,45 @@ footer small {
   background-repeat: no-repeat;
 }
 
+.menu_product {
+  position: relative;
+  background-color: #fff;
+  height: 100%;
+  width: 250px;
+  z-index: 2006;
+}
+
+.menu_product::before {
+  content: " ";
+  display: table;
+}
+
+.menu_product nav {
+  text-align: left;
+}
+
+.menu_product nav .product_choose {
+  padding: 0 0 50px 50px;
+  list-style-type: none;
+}
+
+.menu_product nav .product_choose li {
+  font-size: 15px;
+  margin-bottom: 30px;
+}
+
+.menu_product nav .product_choose li a {
+  text-decoration: none;
+  color: #000;
+  font-size: 1em;
+  line-height: 1.5em;
+  display: block;
+}
+
+.menu_product nav .product_choose li span {
+  font-size: 12px;
+}
+
 #list {
   padding: 100px 0 0;
   color: #fff;
