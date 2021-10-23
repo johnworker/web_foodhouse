@@ -462,7 +462,7 @@ footer small {
 
 .shop {
   position: relative;
-  padding: 160px 0;
+  padding: 120px 0;
   height: 100vh;
 }
 
@@ -476,11 +476,11 @@ footer small {
   font-family: minion-pro, serif;
   font-weight: 500;
   font-style: normal;
-  font-size: 90px;
+  font-size: 70px;
   line-height: 1;
   letter-spacing: 2px;
-  color: rgba(255, 175, 175, 0.7);
-  margin-bottom: 70px;
+  color: black;
+  padding-bottom: 30px;
 }
 
 .shop .container .shopcontents {
@@ -492,7 +492,9 @@ footer small {
 
 .shop .container .shopcontents .shop_image {
   position: relative;
+  width: 60%;
   height: auto;
+  padding-top: 40%;
   border-radius: 30px;
   border: 10px solid rgba(255, 175, 175, 0.7);
   overflow: hidden;
@@ -502,8 +504,21 @@ footer small {
 }
 
 .shop .container .shopcontents .shop_image .shop_map {
+  position: absolute;
+  left: 0;
+  top: 0;
   width: 100%;
   height: 100%;
+}
+
+.shop .container .shopcontents .shop_image .shop_map iframe {
+  width: 650px;
+  height: 450px;
+}
+
+.shop .container .shopcontents .shop_info {
+  width: 40%;
+  margin-left: 50px;
 }
 
 #list {
