@@ -596,13 +596,18 @@ footer {
 }
 
 // 訂購頁面
+.product_fixmenu {
+    height: 125vh !important;
+}
+
 .menu_product {
-    position: relative;
+    position: absolute;
     background-color: #fff;
-    height: 100%;
+    height: 125%;
     width: 250px;
     z-index: 2006;
     left: 0;
+    top: 0;
 
     &::before {
         content: " ";
@@ -630,7 +635,7 @@ footer {
             width: 75px;
             height: 100px;
         }
-    
+
         img {
             height: 100px;
             z-index: 2;
@@ -665,6 +670,7 @@ footer {
             li {
                 font-size: 18px;
                 margin-bottom: 30px;
+                padding-right: 30px;
                 height: 40px;
 
                 a {
@@ -675,7 +681,8 @@ footer {
                     display: block;
                     vertical-align: sub;
                     padding: 0 0 0 20px;
-                    background: $color-white;
+                    background: rgb(255, 255, 160);
+                    transition: 0.5s;
 
                     &:hover {
                         background: $pink;
@@ -688,6 +695,79 @@ footer {
             }
         }
     }
+}
+// 頁籤相簿
+.see_macaron {
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 1.4em;
+    padding: 80px 0 60px 0;
+    text-align: center;
+}
+
+.product_view {
+    margin: 0 0 0 250px;
+    height: 100vh;
+
+    .clearfix {
+        width: 94%;
+        max-width: 880px;
+        margin: 0;
+        padding: 0;
+
+        .box_wrapper {
+            max-width: 100%;
+            width: 81%;
+            height: 45.3vw;
+            max-height: 573px;
+            overflow: hidden;
+            float: left;
+            margin-right: 0%;
+
+            .box_viewport {
+                width: 100%;
+                overflow: hidden;
+                position: relative;
+                height: 583px;
+
+                .macaron {
+                    width: auto;
+                    position: relative;
+                    display: block;
+                    margin: 0;
+                    padding: 0;
+
+                    li {
+                        width: 100% !important;
+
+                        .img_box {
+                            text-align: center;
+                            vertical-align: middle;
+                            overflow: hidden;
+
+                            a {
+                                text-decoration: none;
+                                color: #000;
+                                font-size: 1em;
+                                line-height: 1.5em;
+                                display: block;
+
+                                img {
+                                    width: 60%;
+                                    vertical-align: middle;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.mini_pager {
+    float: right;
+    overflow: hidden;
 }
 // 聯絡LEO
 

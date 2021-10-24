@@ -29,3 +29,15 @@ $(window).scroll(function () {
       $('#gotop').stop().fadeOut('fast');
   }
 });
+
+// 頁籤相簿
+$( function() {
+  $( ".macaron" ).macarons();
+} );
+/* 點圖放大 */
+$(".list").fancybox({
+   closeBtn		: false,
+   helpers	: { buttons	: {}  }
+     
+});
+
