@@ -630,6 +630,7 @@ footer small {
   height: 100%;
   width: 250px;
   z-index: 2006;
+  left: 0;
 }
 
 .menu_product::before {
@@ -637,18 +638,74 @@ footer small {
   display: table;
 }
 
+.menu_product .mark {
+  height: 100px;
+  width: 75px;
+  display: block;
+  margin: 80px auto;
+  z-index: 1;
+}
+
+@media screen and (max-width: 1280px) {
+  .menu_product .mark {
+    height: 100px;
+    width: 75px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .menu_product .mark {
+    height: 100px;
+    width: 75px;
+  }
+}
+
+.menu_product .mark a {
+  width: 75px;
+  height: 100px;
+}
+
+.menu_product .mark img {
+  height: 100px;
+  z-index: 2;
+}
+
+@media screen and (max-width: 1280px) {
+  .menu_product .mark img {
+    height: 100px;
+    width: 75px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .menu_product .mark img {
+    height: 100px;
+    width: 75px;
+  }
+}
+
+.menu_product .mark img:hover {
+  -webkit-filter: invert(76%) sepia(53%) saturate(3960%) hue-rotate(340deg) brightness(100%) contrast(102%);
+          filter: invert(76%) sepia(53%) saturate(3960%) hue-rotate(340deg) brightness(100%) contrast(102%);
+}
+
 .menu_product nav {
   text-align: left;
+  width: 100%;
+  height: 100%;
 }
 
 .menu_product nav .product_choose {
-  padding: 0 0 50px 50px;
+  padding: 0 0 20px 50px;
   list-style-type: none;
+  vertical-align: baseline;
+  height: 500px;
 }
 
 .menu_product nav .product_choose li {
-  font-size: 15px;
+  font-size: 18px;
   margin-bottom: 30px;
+  height: 40px;
 }
 
 .menu_product nav .product_choose li a {
@@ -657,10 +714,17 @@ footer small {
   font-size: 1em;
   line-height: 1.5em;
   display: block;
+  vertical-align: sub;
+  padding: 0 0 0 20px;
+  background: white;
+}
+
+.menu_product nav .product_choose li a:hover {
+  background: rgba(255, 175, 175, 0.7);
 }
 
 .menu_product nav .product_choose li span {
-  font-size: 12px;
+  font-size: 15px;
 }
 
 #list {
@@ -784,5 +848,53 @@ form textarea::-ms-input-placeholder {
 form textarea::placeholder {
   color: #505050;
   font-size: 14px;
+}
+
+.logo {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  height: 80px;
+  width: 60px;
+  display: block;
+  z-index: 1;
+}
+
+@media screen and (max-width: 1280px) {
+  .logo {
+    height: 80px;
+    width: 80px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .logo {
+    height: 80px;
+    width: 80px;
+  }
+}
+
+.logo img {
+  height: 80px;
+  z-index: 2;
+}
+
+@media screen and (max-width: 1280px) {
+  .logo img {
+    height: 80px;
+    width: 70px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .logo img {
+    height: 80px;
+    width: 70px;
+  }
+}
+
+.logo img:hover {
+  -webkit-filter: invert(76%) sepia(53%) saturate(3960%) hue-rotate(340deg) brightness(100%) contrast(102%);
+          filter: invert(76%) sepia(53%) saturate(3960%) hue-rotate(340deg) brightness(100%) contrast(102%);
 }
 /*# sourceMappingURL=style.css.map */
