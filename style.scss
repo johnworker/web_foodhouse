@@ -714,60 +714,57 @@ footer {
         max-width: 880px;
         margin: 0;
         padding: 0;
-
-        .box_wrapper {
-            max-width: 100%;
-            width: 81%;
-            height: 45.3vw;
-            max-height: 573px;
-            overflow: hidden;
-            float: left;
-            margin-right: 0%;
-
-            .box_viewport {
-                width: 100%;
-                overflow: hidden;
-                position: relative;
-                height: 583px;
-
-                .macaron {
-                    width: auto;
-                    position: relative;
-                    display: block;
-                    margin: 0;
-                    padding: 0;
-
-                    li {
-                        width: 100% !important;
-
-                        .img_box {
-                            text-align: center;
-                            vertical-align: middle;
-                            overflow: hidden;
-
-                            a {
-                                text-decoration: none;
-                                color: #000;
-                                font-size: 1em;
-                                line-height: 1.5em;
-                                display: block;
-
-                                img {
-                                    width: 60%;
-                                    vertical-align: middle;
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
     }
 }
 
-.mini_pager {
-    float: right;
+#tabs {
     overflow: hidden;
+    margin: 0 auto;
+    width: 80%;
+
+    ul {
+        display: flex;
+    }
+}
+#tabs > div {
+    display: flex;
+}
+#tabs > div > div {
+    flex: 0.5;
+}
+.new_photo {
+    margin-right: 25px;
+}
+.new_detail {
+    padding: 50px 0;
+
+    h3 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 0.95rem;
+        font-weight: normal;
+        margin: 15px 0;    
+    }
+
+    h4 {
+        font-size: 2.2rem;
+        padding: 10px;
+        margin-bottom: 20px;
+        width: 12rem;
+        background-color: #f1e322;
+        box-shadow: 5px 5px 0 #f00;    
+    }
+}
+.new_detail h4 {
+}
+.new_detail small {
+    font-size: 0.8rem;
+}
+.new_detail p {
+    font-size: 1rem;
+    padding: 20px 0;
 }
 // 聯絡LEO
 

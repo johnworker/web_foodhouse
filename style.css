@@ -755,57 +755,65 @@ footer small {
   padding: 0;
 }
 
-.product_view .clearfix .box_wrapper {
-  max-width: 100%;
-  width: 81%;
-  height: 45.3vw;
-  max-height: 573px;
+#tabs {
   overflow: hidden;
-  float: left;
-  margin-right: 0%;
+  margin: 0 auto;
+  width: 80%;
 }
 
-.product_view .clearfix .box_wrapper .box_viewport {
-  width: 100%;
-  overflow: hidden;
-  position: relative;
-  height: 583px;
+#tabs ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-.product_view .clearfix .box_wrapper .box_viewport .macaron {
-  width: auto;
-  position: relative;
-  display: block;
-  margin: 0;
-  padding: 0;
+#tabs > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-.product_view .clearfix .box_wrapper .box_viewport .macaron li {
-  width: 100% !important;
+#tabs > div > div {
+  -webkit-box-flex: 0.5;
+      -ms-flex: 0.5;
+          flex: 0.5;
 }
 
-.product_view .clearfix .box_wrapper .box_viewport .macaron li .img_box {
-  text-align: center;
-  vertical-align: middle;
-  overflow: hidden;
+.new_photo {
+  margin-right: 25px;
 }
 
-.product_view .clearfix .box_wrapper .box_viewport .macaron li .img_box a {
-  text-decoration: none;
-  color: #000;
-  font-size: 1em;
-  line-height: 1.5em;
-  display: block;
+.new_detail {
+  padding: 50px 0;
 }
 
-.product_view .clearfix .box_wrapper .box_viewport .macaron li .img_box a img {
-  width: 60%;
-  vertical-align: middle;
+.new_detail h3 {
+  font-size: 2rem;
 }
 
-.mini_pager {
-  float: right;
-  overflow: hidden;
+.new_detail h2 {
+  font-size: 0.95rem;
+  font-weight: normal;
+  margin: 15px 0;
+}
+
+.new_detail h4 {
+  font-size: 2.2rem;
+  padding: 10px;
+  margin-bottom: 20px;
+  width: 12rem;
+  background-color: #f1e322;
+  -webkit-box-shadow: 5px 5px 0 #f00;
+          box-shadow: 5px 5px 0 #f00;
+}
+
+.new_detail small {
+  font-size: 0.8rem;
+}
+
+.new_detail p {
+  font-size: 1rem;
+  padding: 20px 0;
 }
 
 #list {

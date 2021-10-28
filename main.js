@@ -32,12 +32,6 @@ $(window).scroll(function () {
 
 // 頁籤相簿
 $( function() {
-  $( ".macaron" ).macarons();
+  $( ".tab" ).tabs();
 } );
-/* 點圖放大 */
-$(".list").fancybox({
-   closeBtn		: false,
-   helpers	: { buttons	: {}  }
-     
-});
 
