@@ -724,7 +724,39 @@ footer {
 
     ul {
         display: flex;
+        margin: 0;
+        list-style: none;
+
+        li {
+            display: inline-block;
+            vertical-align: top;
+            font-family: "微軟正黑體";
+            margin: 0 -1px -1px 0;
+            border: 1px solid #bcbcbc;
+            line-height: 25px;
+            background: #cdcdcd;
+            padding: 0 15px;
+            list-style: none;
+            box-sizing: border-box;
+
+            &.active {
+                border-bottom: 1px solid #fff;
+                background: #fff;
+            }
+
+            a {
+                color: #000;
+                text-decoration: none;
+            }
+        }
     }
+
+    .tab-inner {
+        clear:both;
+        color:#000;
+        border:1px #BCBCBC solid;     
+    }
+
 }
 #tabs > div {
     display: flex;
@@ -745,7 +777,7 @@ footer {
     h2 {
         font-size: 0.95rem;
         font-weight: normal;
-        margin: 15px 0;    
+        margin: 15px 0;
     }
 
     h4 {
@@ -754,18 +786,30 @@ footer {
         margin-bottom: 20px;
         width: 12rem;
         background-color: #f1e322;
-        box-shadow: 5px 5px 0 #f00;    
+        box-shadow: 5px 5px 0 #f00;
+    }
+
+    small {
+        font-size: 0.8rem;
+    }
+
+    p {
+        font-size: 1rem;
+        padding: 20px 0;
     }
 }
-.new_detail h4 {
+
+.tab-title {
+    list-style: none;
+    overflow: hidden;
+    float: right;
+
+    img {
+        width: 175px;
+        height: 175px;
+    }
 }
-.new_detail small {
-    font-size: 0.8rem;
-}
-.new_detail p {
-    font-size: 1rem;
-    padding: 20px 0;
-}
+
 // 聯絡LEO
 
 #list {

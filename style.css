@@ -765,6 +765,38 @@ footer small {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin: 0;
+  list-style: none;
+}
+
+#tabs ul li {
+  display: inline-block;
+  vertical-align: top;
+  font-family: "微軟正黑體";
+  margin: 0 -1px -1px 0;
+  border: 1px solid #bcbcbc;
+  line-height: 25px;
+  background: #cdcdcd;
+  padding: 0 15px;
+  list-style: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#tabs ul li.active {
+  border-bottom: 1px solid #fff;
+  background: #fff;
+}
+
+#tabs ul li a {
+  color: #000;
+  text-decoration: none;
+}
+
+#tabs .tab-inner {
+  clear: both;
+  color: #000;
+  border: 1px #BCBCBC solid;
 }
 
 #tabs > div {
@@ -814,6 +846,17 @@ footer small {
 .new_detail p {
   font-size: 1rem;
   padding: 20px 0;
+}
+
+.tab-title {
+  list-style: none;
+  overflow: hidden;
+  float: right;
+}
+
+.tab-title img {
+  width: 175px;
+  height: 175px;
 }
 
 #list {
