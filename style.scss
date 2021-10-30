@@ -762,10 +762,11 @@ footer {
     display: flex;
 }
 #tabs > div > div {
-    flex: 0.5;
+    flex: 0.3;
 }
 .new_photo {
     margin-right: 25px;
+    padding-top: 50px;
 }
 .new_detail {
     padding: 50px 0;
@@ -805,8 +806,8 @@ footer {
     float: right;
 
     img {
-        width: 175px;
-        height: 175px;
+        width: 140px;
+        height: 140px;
     }
 }
 

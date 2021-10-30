@@ -806,13 +806,14 @@ footer small {
 }
 
 #tabs > div > div {
-  -webkit-box-flex: 0.5;
-      -ms-flex: 0.5;
-          flex: 0.5;
+  -webkit-box-flex: 0.3;
+      -ms-flex: 0.3;
+          flex: 0.3;
 }
 
 .new_photo {
   margin-right: 25px;
+  padding-top: 50px;
 }
 
 .new_detail {
@@ -855,8 +856,8 @@ footer small {
 }
 
 .tab-title img {
-  width: 175px;
-  height: 175px;
+  width: 140px;
+  height: 140px;
 }
 
 #list {

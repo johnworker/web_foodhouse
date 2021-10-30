@@ -32,7 +32,7 @@ $(window).scroll(function () {
 
 // 頁籤相簿
 $( function() {
-  $( ".tab" ).tabs();
+  $( "#tabs" ).tabs();
 } );
 
 //this is where we apply opacity to the arrow
