@@ -618,6 +618,7 @@ footer {
         height: 100px;
         width: 75px;
         display: block;
+        background: rgba(0,0,0,0);
         margin: 80px auto;
         z-index: 1;
 
@@ -721,6 +722,7 @@ footer {
     overflow: hidden;
     margin: 0 auto;
     width: 80%;
+    background: rgba(0,0,0,0.1);
 
     ul {
         display: flex;
@@ -734,14 +736,19 @@ footer {
             margin: 0 -1px -1px 0;
             border: 1px solid #bcbcbc;
             line-height: 25px;
-            background: #cdcdcd;
+            background: #ffffa0;
             padding: 0 15px;
             list-style: none;
             box-sizing: border-box;
+            transition: 0.5s;
 
             &.active {
                 border-bottom: 1px solid #fff;
                 background: #fff;
+            }
+
+            &:hover {
+                background: $pink;
             }
 
             a {
@@ -762,7 +769,9 @@ footer {
     display: flex;
 }
 #tabs > div > div {
-    flex: 0.3;
+    flex: 0.5;
+    padding: 100px 0 0 120px;
+    margin: 0 auto;
 }
 .new_photo {
     margin-right: 25px;

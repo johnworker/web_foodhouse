@@ -647,6 +647,7 @@ footer small {
   height: 100px;
   width: 75px;
   display: block;
+  background: rgba(0, 0, 0, 0);
   margin: 80px auto;
   z-index: 1;
 }
@@ -759,6 +760,7 @@ footer small {
   overflow: hidden;
   margin: 0 auto;
   width: 80%;
+  background: rgba(0, 0, 0, 0.1);
 }
 
 #tabs ul {
@@ -776,16 +778,22 @@ footer small {
   margin: 0 -1px -1px 0;
   border: 1px solid #bcbcbc;
   line-height: 25px;
-  background: #cdcdcd;
+  background: #ffffa0;
   padding: 0 15px;
   list-style: none;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 #tabs ul li.active {
   border-bottom: 1px solid #fff;
   background: #fff;
+}
+
+#tabs ul li:hover {
+  background: rgba(255, 175, 175, 0.7);
 }
 
 #tabs ul li a {
@@ -806,9 +814,11 @@ footer small {
 }
 
 #tabs > div > div {
-  -webkit-box-flex: 0.3;
-      -ms-flex: 0.3;
-          flex: 0.3;
+  -webkit-box-flex: 0.5;
+      -ms-flex: 0.5;
+          flex: 0.5;
+  padding: 100px 0 0 120px;
+  margin: 0 auto;
 }
 
 .new_photo {
