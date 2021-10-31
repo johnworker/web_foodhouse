@@ -630,7 +630,7 @@ footer small {
 
 .menu_product {
   position: absolute;
-  background-color: #fff;
+  background-color: #b4afff;
   height: 125%;
   width: 250px;
   z-index: 2006;
@@ -760,7 +760,7 @@ footer small {
   overflow: hidden;
   margin: 0 auto;
   width: 80%;
-  background: rgba(0, 0, 0, 0.1);
+  background: #d8afff;
 }
 
 #tabs ul {
