@@ -323,8 +323,9 @@ header .logo img:hover {
 }
 
 .content .product_box .product_list .product_item {
-  width: 20%;
+  width: 18%;
   float: left;
+  margin: 10px;
 }
 
 .content .product_box .product_list .product_item a {
@@ -857,6 +858,19 @@ footer small {
 .new_detail p {
   font-size: 1rem;
   padding: 20px 0;
+}
+
+.new_detail button {
+  padding: 5px;
+  border: 0;
+  margin-left: 10px;
+  background: rgba(255, 255, 255, 0.3);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.new_detail button:hover {
+  background: #fcafaf;
 }
 
 .tab-title {
