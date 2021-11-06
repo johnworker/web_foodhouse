@@ -326,16 +326,25 @@ header .logo img:hover {
   width: 18%;
   float: left;
   margin: 12px;
-}
-
-.content .product_box .product_list .product_item a {
-  display: block;
   position: relative;
 }
 
-.content .product_box .product_list .product_item a img {
+.content .product_box .product_list .product_item img {
   max-width: 100%;
   height: auto;
+}
+
+.content .product_box .product_list .product_item .yellow {
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 1;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.content .product_box .product_list .product_item .yellow:hover {
+  opacity: 0;
 }
 
 #gotop {
@@ -805,7 +814,7 @@ footer small {
 #tabs .tab-inner {
   clear: both;
   color: #000;
-  border: 1px #BCBCBC solid;
+  border: 1px #bcbcbc solid;
 }
 
 #tabs > div {

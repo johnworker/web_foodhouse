@@ -303,15 +303,23 @@ header {
                 width: 18%;
                 float: left;
                 margin: 12px;
+                position: relative;
                 // margin: 0 4% 8% 4%;
 
-                a {
-                    display: block;
-                    position: relative;
+                img {
+                    max-width: 100%;
+                    height: auto;
+                }
 
-                    img {
-                        max-width: 100%;
-                        height: auto;
+                .yellow {
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    opacity: 1;
+                    transition: 0.5s;
+
+                    &:hover {
+                        opacity: 0;
                     }
                 }
             }
@@ -619,7 +627,7 @@ footer {
         height: 100px;
         width: 75px;
         display: block;
-        background: rgba(0,0,0,0);
+        background: rgba(0, 0, 0, 0);
         margin: 80px auto;
         z-index: 1;
 
@@ -760,11 +768,10 @@ footer {
     }
 
     .tab-inner {
-        clear:both;
-        color:#000;
-        border:1px #BCBCBC solid;     
+        clear: both;
+        color: #000;
+        border: 1px #bcbcbc solid;
     }
-
 }
 #tabs > div {
     display: flex;
