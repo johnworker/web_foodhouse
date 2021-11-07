@@ -43,7 +43,7 @@ gsap.to(".left_yellowtwo", {
     start: "25% 40%",
     end: "30% 20%",
     scrub: 1,
-    markers: true
+    // markers: true
   },
 
   x: 200,

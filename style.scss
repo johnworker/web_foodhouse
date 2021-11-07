@@ -154,6 +154,17 @@ header {
     
 }
 
+.left_yellowfour {
+    position: relative;
+
+    img {
+        position: absolute;
+        top: 800px;
+        left: 0%;
+    }
+    
+}
+
 // 首頁輪播區
 #carouselExampleFade {
     bottom: 80%;

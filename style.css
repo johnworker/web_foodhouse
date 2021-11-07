@@ -165,6 +165,16 @@ header .logo img:hover {
   left: -10%;
 }
 
+.left_yellowfour {
+  position: relative;
+}
+
+.left_yellowfour img {
+  position: absolute;
+  top: 800px;
+  left: 0%;
+}
+
 #carouselExampleFade {
   bottom: 80%;
 }
