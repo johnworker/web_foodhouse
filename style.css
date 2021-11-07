@@ -155,6 +155,16 @@ header .logo img:hover {
   }
 }
 
+.left_yellowtwo {
+  position: relative;
+}
+
+.left_yellowtwo img {
+  position: absolute;
+  top: 350px;
+  left: -10%;
+}
+
 #carouselExampleFade {
   bottom: 80%;
 }

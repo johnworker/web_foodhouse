@@ -143,6 +143,17 @@ header {
     }
 }
 
+.left_yellowtwo {
+    position: relative;
+
+    img {
+        position: absolute;
+        top: 350px;
+        left: -10%;
+    }
+    
+}
+
 // 首頁輪播區
 #carouselExampleFade {
     bottom: 80%;

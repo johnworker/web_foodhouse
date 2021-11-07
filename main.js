@@ -35,6 +35,26 @@ $( function() {
   $( "#tabs" ).tabs();
 } );
 
+// Ghost_hang
+gsap.to(".left_yellowtwo", {
+  scrollTrigger: {
+    tigger: ".left_yellowtwo",
+    toggleActions: "restart none resume none",
+    start: "25% 40%",
+    end: "30% 20%",
+    scrub: 1,
+    markers: true
+  },
+
+  x: 200,
+  y: 60,
+  z: 30,
+  rotation: -2,
+  duration: 3
+}
+
+);
+
 //this is where we apply opacity to the arrow
 $(window).scroll( function(){
 
