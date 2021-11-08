@@ -155,6 +155,16 @@ header .logo img:hover {
   }
 }
 
+.left_yellowfive {
+  position: relative;
+}
+
+.left_yellowfive img {
+  position: absolute;
+  bottom: 390px;
+  right: 12%;
+}
+
 .left_yellowtwo {
   position: relative;
 }
@@ -206,7 +216,7 @@ header .logo img:hover {
   height: 260vh;
   display: block;
   padding-top: 100px;
-  width: 100%;
+  width: 100vw;
 }
 
 .content .product_history {
