@@ -35,7 +35,7 @@ $( function() {
   $( "#tabs" ).tabs();
 } );
 
-// Ghost_hang
+// left_yellowtwo
 gsap.to(".left_yellowtwo", {
   scrollTrigger: {
     tigger: ".left_yellowtwo",
@@ -50,6 +50,43 @@ gsap.to(".left_yellowtwo", {
   y: 60,
   z: 30,
   rotation: -2,
+  duration: 3
+}
+
+);
+
+// left_yellowfour
+gsap.to(".left_yellowfour", {
+  scrollTrigger: {
+    tigger: ".left_yellowfour",
+    toggleActions: "restart none resume none",
+    start: "25% 40%",
+    end: "30% 20%",
+    scrub: 1,
+    // markers: true
+  },
+
+  y: 30,
+  rotation: -2,
+  duration: 3
+}
+
+);
+
+// left_yellowone
+gsap.to(".left_yellowone", {
+  scrollTrigger: {
+    tigger: ".left_yellowone",
+    toggleActions: "restart none resume none",
+    start: "25% 40%",
+    end: "30% 20%",
+    scrub: 1,
+    // markers: true
+  },
+
+  x: -80,
+  y: 10,
+  rotation: -1,
   duration: 3
 }
 
