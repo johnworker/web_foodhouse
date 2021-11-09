@@ -92,6 +92,24 @@ gsap.to(".left_yellowone", {
 
 );
 
+// left_oval
+gsap.to(".left_oval", {
+  scrollTrigger: {
+    tigger: ".left_oval",
+    toggleActions: "restart none resume none",
+    start: "45% 40%",
+    end: "50% 20%",
+    scrub: 1,
+    // markers: true
+  },
+
+  x: 400,
+  y: 50,
+  duration: 3
+}
+
+);
+
 //this is where we apply opacity to the arrow
 $(window).scroll( function(){
 

@@ -142,6 +142,54 @@ header {
         }
     }
 }
+.picture_animate {
+    width: 50%;
+    height: 0;
+    overflow: hidden;
+
+    &::before {
+        background-image: url(./img/pictureone.png);
+        content: "";
+        position: absolute;
+        top: 0;
+        right: -250px;
+        display: block;
+        width: 50%;
+        height: 50%;
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    &::after {
+        background-image: url(./img/picturefour.png);
+        content: "";
+        position: absolute;
+        top: 0;
+        right: -90px;
+        display: block;
+        width: 50%;
+        height: 50%;
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        opacity: 0;
+        animation: 1s shakepitcure steps(1) infinite alternate;
+        animation-fill-mode: forwards;
+
+        @keyframes shakepitcure {
+            0% {
+                opacity: 0;
+            }
+            50% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 0;
+            }
+        }
+    }
+}
 
 .left_yellowfive {
     position: relative;
@@ -183,6 +231,18 @@ header {
         position: absolute;
         top: 400px;
         left: 25%;
+    }
+    
+}
+
+.left_oval {
+    position: relative;
+
+    img {
+        position: absolute;
+        top: 100px;
+        left: -10%;
+        width: 125px;
     }
     
 }
