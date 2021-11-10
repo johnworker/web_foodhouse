@@ -143,52 +143,12 @@ header {
     }
 }
 .picture_animate {
-    width: 50%;
-    height: 0;
-    overflow: hidden;
-
-    &::before {
-        background-image: url(./img/pictureone.png);
-        content: "";
-        position: absolute;
-        top: 0;
-        right: -250px;
-        display: block;
-        width: 50%;
-        height: 50%;
-        background-position: center center;
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
-
-    &::after {
-        background-image: url(./img/picturefour.png);
-        content: "";
-        position: absolute;
-        top: 0;
-        right: -90px;
-        display: block;
-        width: 50%;
-        height: 50%;
-        background-position: center center;
-        background-size: cover;
-        background-repeat: no-repeat;
-        opacity: 0;
-        animation: 1s shakepitcure steps(1) infinite alternate;
-        animation-fill-mode: forwards;
-
-        @keyframes shakepitcure {
-            0% {
-                opacity: 0;
-            }
-            50% {
-                opacity: 1;
-            }
-            100% {
-                opacity: 0;
-            }
-        }
-    }
+    background-image: url(./img/pitcuremotion.gif);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: -380px;
 }
 
 .left_yellowfive {
