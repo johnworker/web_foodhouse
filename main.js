@@ -92,10 +92,10 @@ gsap.to(".left_yellowone", {
 
 );
 
-// left_oval
-gsap.to(".left_oval", {
+// fake_cake
+gsap.to(".fake_cake", {
   scrollTrigger: {
-    tigger: ".left_oval",
+    tigger: ".fake_cake",
     toggleActions: "restart none resume none",
     start: "45% 40%",
     end: "50% 20%",
@@ -103,8 +103,9 @@ gsap.to(".left_oval", {
     // markers: true
   },
 
-  x: 400,
-  y: 50,
+  x: -160,
+  y: 80,
+  rotation: -1,
   duration: 3
 }
 
