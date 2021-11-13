@@ -483,7 +483,7 @@ footer small {
 }
 
 .article_box .product_show {
-  padding-top: 50px;
+  padding-top: 150px;
   width: 100%;
   display: block;
   position: relative;
@@ -503,7 +503,7 @@ footer small {
   float: right;
 }
 
-.article_box .product_show .product_item a {
+.article_box .product_show .product_item .describe {
   display: block;
   width: 100%;
   background-color: rgba(255, 175, 175, 0.7);
@@ -513,23 +513,19 @@ footer small {
   text-decoration: none;
 }
 
-.article_box .product_show .product_item a:hover {
-  text-decoration: none;
-}
-
-.article_box .product_show .product_item a img {
+.article_box .product_show .product_item .describe img {
   max-width: 60%;
   height: auto;
   display: block;
   margin: 0 auto;
 }
 
-.article_box .product_show .product_item a h3 {
+.article_box .product_show .product_item .describe h3 {
   padding: 0 10%;
   margin-bottom: 1rem;
 }
 
-.article_box .product_show .product_item a p {
+.article_box .product_show .product_item .describe p {
   padding: 0 10%;
 }
 
@@ -537,11 +533,11 @@ footer small {
   display: block;
   position: absolute;
   width: 46%;
-  padding: 12px;
+  padding: 20px;
 }
 
 .text_link button {
-  width: 200px;
+  width: 100%;
 }
 
 .text_link button a {
@@ -554,6 +550,12 @@ footer small {
   background-color: #ffffaf !important;
   -webkit-box-shadow: 5px 5px 20px;
           box-shadow: 5px 5px 20px;
+  display: block;
+  width: 100%;
+  margin-bottom: 0;
+  padding-bottom: 2px;
+  color: #000;
+  text-decoration: none;
 }
 
 .text_link button a:hover {
@@ -561,8 +563,6 @@ footer small {
   font-weight: 900;
   font-size: 24px;
   background-color: #c8ffaf !important;
-  -webkit-box-shadow: 2px 2px 5px black;
-          box-shadow: 2px 2px 5px black;
 }
 
 .shop {
@@ -948,6 +948,12 @@ footer small {
 
 .new_detail button:hover {
   background: #fcafaf;
+}
+
+.new_detail .itemSelect {
+  font-size: 22px;
+  margin: 20px 0 20px;
+  text-align: left;
 }
 
 .tab-title {

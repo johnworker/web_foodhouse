@@ -159,7 +159,6 @@ header {
         bottom: 390px;
         right: 12%;
     }
-    
 }
 
 .left_yellowtwo {
@@ -170,7 +169,6 @@ header {
         top: 350px;
         left: -10%;
     }
-    
 }
 
 .left_yellowfour {
@@ -181,7 +179,6 @@ header {
         top: 390px;
         left: 12%;
     }
-    
 }
 
 .left_yellowone {
@@ -192,7 +189,6 @@ header {
         top: 400px;
         left: 25%;
     }
-    
 }
 
 .left_picmotion {
@@ -212,7 +208,6 @@ header {
         top: 160px;
         right: 10%;
     }
-    
 }
 
 // 首頁輪播區
@@ -467,7 +462,7 @@ footer {
     width: 100%;
 
     .product_show {
-        padding-top: 50px;
+        padding-top: 150px;
         width: 100%;
         display: block;
         position: relative;
@@ -485,7 +480,7 @@ footer {
                 float: right;
             }
 
-            a {
+            .describe {
                 display: block;
                 width: 100%;
                 background-color: $pink;
@@ -493,10 +488,6 @@ footer {
                 padding-bottom: 2px;
                 color: #000;
                 text-decoration: none;
-
-                &:hover {
-                    text-decoration: none;
-                }
 
                 img {
                     max-width: 60%;
@@ -522,10 +513,10 @@ footer {
     display: block;
     position: absolute;
     width: 46%;
-    padding: 12px;
+    padding: 20px;
 
     button {
-        width: 200px;
+        width: 100%;
 
         a {
             text-decoration: none;
@@ -535,13 +526,18 @@ footer {
             font-size: 20px;
             background-color: rgb(255, 255, 175) !important;
             box-shadow: 5px 5px 20px;
+            display: block;
+            width: 100%;
+            margin-bottom: 0;
+            padding-bottom: 2px;
+            color: #000;
+            text-decoration: none;
 
             &:hover {
                 text-decoration: none;
                 font-weight: 900;
                 font-size: 24px;
                 background-color: rgb(200, 255, 175) !important;
-                box-shadow: 2px 2px 5px rgb(0, 0, 0);
             }
         }
     }
@@ -898,6 +894,13 @@ footer {
         &:hover {
             background: rgb(252, 175, 175);
         }
+    }
+
+    // 購買選單
+    .itemSelect {
+        font-size: 22px;
+        margin: 20px 0 20px;
+        text-align: left;
     }
 }
 
