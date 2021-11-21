@@ -543,6 +543,16 @@ footer {
     }
 }
 
+.big_cake {
+    position: relative;
+
+    img {
+        position: absolute;
+        bottom: 160px;
+        right: 10%;
+    }
+}
+
 // 店家地圖
 .shop {
     position: relative;

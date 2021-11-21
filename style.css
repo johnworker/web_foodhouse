@@ -565,6 +565,16 @@ footer small {
   background-color: #c8ffaf !important;
 }
 
+.big_cake {
+  position: relative;
+}
+
+.big_cake img {
+  position: absolute;
+  bottom: 160px;
+  right: 10%;
+}
+
 .shop {
   position: relative;
   padding: 120px 0;
