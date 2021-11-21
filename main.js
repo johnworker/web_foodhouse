@@ -111,6 +111,24 @@ gsap.to(".fake_cake", {
 
 );
 
+// big_cake
+gsap.to(".big_cake", {
+  scrollTrigger: {
+    tigger: ".big_cake",
+    toggleActions: "restart none resume none",
+    start: "50% 40%",
+    end: "55% 20%",
+    scrub: 1,
+    markers: true
+  },
+
+  y: -80,
+  duration: 3
+}
+
+);
+
+
 //this is where we apply opacity to the arrow
 $(window).scroll( function(){
 
