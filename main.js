@@ -119,7 +119,7 @@ gsap.to(".big_cake", {
     start: "50% 40%",
     end: "55% 20%",
     scrub: 1,
-    markers: true
+    // markers: true
   },
 
   y: -80,
