@@ -4,35 +4,36 @@ var app = new Vue({
         itemList:[
           {
             id:'1',
-            itemName:'優質短袖白T',
+            itemName:'重乳麥芽蛋糕',
             imgUrl:'https://upload.cc/i1/2021/11/21/luoJiR.png',
             price:'150',
             count:'2'
+            
           },
           {
             id:'2',
-            itemName:'骷髏手短黑T',
+            itemName:'草莓戀糖蛋糕',
             imgUrl:'https://upload.cc/i1/2021/11/21/2RN5ir.png',
             price:'150',
             count:'3'
           },
           {
             id:'3',
-            itemName:'超時尚牛仔庫',
+            itemName:'莓家族蛋糕',
             imgUrl:'https://upload.cc/i1/2021/11/21/jHxpmr.png',
             price:'200',
             count:'1'
           },
           {
             id:'4',
-            itemName:'質感褐色系大衣服',
+            itemName:'巧克力戚風蛋糕',
             imgUrl:'https://upload.cc/i1/2021/11/21/OMuNtG.png',
             price:'250',
             count:'1'
           },
           {
             id:'5',
-            itemName:'質感褐色系大衣服',
+            itemName:'惡魔蛋糕',
             imgUrl:'https://upload.cc/i1/2021/11/21/oBU9vl.png',
             price:'250',
             count:'1'
