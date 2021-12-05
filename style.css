@@ -164,14 +164,13 @@ header .logo img:hover {
   right: -380px;
 }
 
-.left_yellowfive {
-  position: relative;
-}
-
-.left_yellowfive img {
+.animation_box {
+  background-image: url(./img/animation_picture.gif);
   position: absolute;
-  bottom: 390px;
-  right: 12%;
+  width: 52%;
+  height: 15.5%;
+  right: 26%;
+  top: -20px;
 }
 
 .left_yellowtwo {
@@ -573,6 +572,26 @@ footer small {
   position: absolute;
   top: 1100px;
   right: 47%;
+}
+
+.chocolate_fly {
+  position: relative;
+}
+
+.chocolate_fly img {
+  position: absolute;
+  top: 1090px;
+  right: 5%;
+}
+
+.donut_fly {
+  position: relative;
+}
+
+.donut_fly img {
+  position: absolute;
+  top: 1090px;
+  left: 5%;
 }
 
 .shop {

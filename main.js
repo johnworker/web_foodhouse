@@ -129,6 +129,41 @@ gsap.to(".big_cake", {
 );
 
 
+// chocolate_fly
+gsap.to(".chocolate_fly", {
+  scrollTrigger: {
+    tigger: ".chocolate_fly",
+    toggleActions: "restart none resume none",
+    start: "50% 40%",
+    end: "55% 20%",
+    scrub: 1,
+    // markers: true
+  },
+
+  y: -80,
+  duration: 3
+}
+
+);
+
+// donut_fly
+gsap.to(".donut_fly", {
+  scrollTrigger: {
+    tigger: ".donut_fly",
+    toggleActions: "restart none resume none",
+    start: "50% 40%",
+    end: "55% 20%",
+    scrub: 1,
+    // markers: true
+  },
+
+  y: -80,
+  duration: 3
+}
+
+);
+
+
 //this is where we apply opacity to the arrow
 $(window).scroll( function(){
 
