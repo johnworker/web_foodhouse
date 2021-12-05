@@ -12,6 +12,8 @@ $green: green;
 $atmosphere: #5b6470;
 $dark: #323640;
 $light: #bdc7d6;
+$vanilla: #f0e4d0;
+$chocolate: #553c13;
 $desk: 1280px; //桌電
 $tablet: 1024px; //平板尺寸 (ipad pro)
 $tablets: 960px; //平板尺寸 (ipad)
@@ -152,7 +154,7 @@ header {
 }
 
 .animation_box {
-    background-image: url(./img/animation_picture.gif);
+    background-image: url(./img/animation_picmotion.gif);
     position: absolute;
     width:52%;
     height: 15.5%;
@@ -229,7 +231,7 @@ header {
 
 // 首頁的產品區
 .content {
-    height: 260vh;
+    height: 280vh;
     display: block;
     padding-top: 100px;
     width: 100vw;
@@ -391,6 +393,188 @@ header {
             }
         }
     }
+}
+
+
+// cake程式Q版
+@mixin foodColoring($color) {
+    background-color: $color;
+    box-shadow:
+        0 2px 0px lighten($color, 5%),
+        0 4px 0px darken($color, 8.2%),
+        0 6px 0px darken($color, 8.4%),
+        0 8px 0px darken($color, 8.6%),
+        0 10px 0px darken($color, 8.8%),
+        0 12px 0px darken($color, 9%),
+        0 14px 0px darken($color, 9.2%),
+        0 16px 0px darken($color, 9.4%),
+        0 18px 0px darken($color, 9.6%),
+        0 20px 0px darken($color, 9.8%),
+        0 22px 0px darken($color, 10%),
+        0 24px 0px darken($color, 10.2%),
+        0 26px 0px darken($color, 10.4%),
+        0 28px 0px darken($color, 10.6%),
+        0 30px 0px darken($color, 10.8%);
+}
+
+.cake {
+    position: relative;
+    width: 250px;
+    height: 200px;
+    top: 35%;
+    left: 50%;
+    margin-top: -70px;
+    margin-left: -125px;
+}
+
+.cake > * {
+    position: absolute;
+}
+
+.layer {
+    position: absolute;
+    display: block;
+    width: 250px;
+    height: 100px;
+    border-radius: 50%;
+    @include foodColoring($chocolate);
+}
+
+.layer-top { top: 0px; }
+.layer-middle { top: 33px; }
+.layer-bottom { top: 66px; }
+
+.icing {
+    top: 2px;
+    left: 5px;
+    background-color: $vanilla;
+    width: 240px;
+    height: 90px;
+    border-radius: 50%;
+    &:before {
+        content: "";
+        position: absolute;
+        top: 4px;
+        right: 5px;
+        bottom: 6px;
+        left: 5px;
+        background-color: lighten($vanilla, 3%);
+        box-shadow:
+            0 0 4px lighten($vanilla, 5%),
+            0 0 4px lighten($vanilla, 5%),
+            0 0 4px lighten($vanilla, 5%);
+        border-radius: 50%;
+        z-index: 1;
+    }
+}
+
+.drip {
+    display: block;
+    width: 50px;
+    height: 60px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    background-color: $vanilla;
+}
+
+.drip1 {
+    top: 53px;
+    left: 5px;
+    transform: skewY(15deg);
+    height: 48px;
+    width: 40px;
+}
+
+.drip2 {
+    top: 69px;
+    left: 181px;
+    transform: skewY(-15deg);
+}
+
+.drip3 {
+    top: 54px;
+    left: 90px;
+    width: 80px;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+
+.candle {
+    background-color: #7B020B;
+    width: 16px;
+    height: 50px;
+    border-radius: 8px / 4px;
+    top: -20px;
+    left: 50%;
+    margin-left: -8px;
+    z-index: 10;
+    &:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 16px;
+        height: 8px;
+        border-radius: 50%;
+        background-color: lighten(#7B020B, 10%);
+    }
+}
+
+.flame {
+    position: absolute;
+    background-color: orange;
+    width: 15px;
+    height: 35px;
+    border-radius: 10px 10px 10px 10px / 25px 25px 10px 10px;
+    top: -34px;
+    left: 50%;
+    margin-left: -7.5px;
+    z-index: 10;
+    box-shadow:
+        0 0 10px rgba(orange, 0.5),
+        0 0 20px rgba(orange, 0.5),
+        0 0 60px rgba(orange, 0.5),
+        0 0 80px rgba(orange, 0.5);
+    transform-origin: 50% 90%;
+    animation: flicker 1s ease-in-out alternate infinite;
+}
+
+@keyframes flicker {
+    0% {
+        transform: skewX(5deg);
+        box-shadow: 
+            0 0 10px rgba(orange, 0.2),
+            0 0 20px rgba(orange, 0.2),
+            0 0 60px rgba(orange, 0.2),
+            0 0 80px rgba(orange, 0.2) }
+    25% {
+        transform: skewX(-5deg);
+        box-shadow:
+            0 0 10px rgba(orange, 0.5),
+            0 0 20px rgba(orange, 0.5),
+            0 0 60px rgba(orange, 0.5),
+            0 0 80px rgba(orange, 0.5) }
+    50% {
+        transform: skewX(10deg);
+        box-shadow:
+            0 0 10px rgba(orange, 0.3),
+            0 0 20px rgba(orange, 0.3),
+            0 0 60px rgba(orange, 0.3),
+            0 0 80px rgba(orange, 0.3) }
+    75% {
+        transform: skewX(-10deg);
+        box-shadow:
+            0 0 10px rgba(orange, 0.4),
+            0 0 20px rgba(orange, 0.4),
+            0 0 60px rgba(orange, 0.4),
+            0 0 80px rgba(orange, 0.4) }
+    100% {
+        transform: skewX(5deg);
+        box-shadow:
+            0 0 10px rgba(orange, 0.5),
+            0 0 20px rgba(orange, 0.5),
+            0 0 60px rgba(orange, 0.5),
+            0 0 80px rgba(orange, 0.5) }
 }
 
 // 置頂按鈕
@@ -1058,3 +1242,177 @@ form {
         }
     }
 }
+
+
+// cakes
+
+.cakes {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    margin-left: -50px;
+    margin-top: -50px;
+    width: 100px;
+    height: 100px;
+  }
+  /* ============================================== BASE
+  */
+  .cakes:after {
+    background: #ebe3e1;
+    border-radius: 100px;
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100px;
+    height: 2px;
+  }
+  /* ============================================== Candle
+  */
+  .velas {
+    background: #ffffff;
+    border-radius: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -2.5px;
+    margin-top: -8.33333333px;
+    width: 5px;
+    height: 16.66666667px;
+  }
+  .velas:after,
+  .velas:before {
+    background: rgba(255, 0, 0, 0.4);
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2.22222222px;
+  }
+  .velas:after {
+    top: 25%;
+    left: 0;
+  }
+  .velas:before {
+    top: 45%;
+    left: 0;
+  }
+  /* ============================================== Fire
+  */
+  .fuego {
+    border-radius: 100%;
+    box-shadow: 0 0 40px 10px rgba(248, 233, 209, 0.2);
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    margin-left: -3.33333333px;
+    width: 6.66666667px;
+    height: 12.5px;
+  }
+  .fuego:nth-child(1) {
+    -webkit-animation: fuego 2s infinite;
+            animation: fuego 2s infinite;
+  }
+  .fuego:nth-child(2) {
+    -webkit-animation: fuego 1.5s infinite;
+            animation: fuego 1.5s infinite;
+  }
+  .fuego:nth-child(3) {
+    -webkit-animation: fuego 1s infinite;
+            animation: fuego 1s infinite;
+  }
+  .fuego:nth-child(4) {
+    -webkit-animation: fuego 0.5s infinite;
+            animation: fuego 0.5s infinite;
+  }
+  .fuego:nth-child(5) {
+    -webkit-animation: fuego 0.2s infinite;
+            animation: fuego 0.2s infinite;
+  }
+  /* ============================================== Animation Fire
+  */
+  @-webkit-keyframes fuego {
+    0% {
+      background: rgba(254, 248, 97, 0.5);
+      transform: translateY(0) scale(1);
+    }
+    50% {
+      background: rgba(255, 50, 0, 0.1);
+      transform: translateY(-20px) scale(0);
+    }
+    100% {
+      background: rgba(254, 248, 97, 0.5);
+      transform: translateY(0) scale(1);
+    }
+  }
+  @keyframes fuego {
+    0% {
+      background: rgba(254, 248, 97, 0.5);
+      transform: translateY(0) scale(1);
+    }
+    50% {
+      background: rgba(255, 50, 0, 0.1);
+      transform: translateY(-20px) scale(0);
+    }
+    100% {
+      background: rgba(254, 248, 97, 0.5);
+      transform: translateY(0) scale(1);
+    }
+  }
+  /* ============================================== Frosting
+  */
+  .cobertura {
+    background: #ece7e3;
+    border-radius: 50px;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    margin-left: -27.77777778px;
+    margin-top: -5px;
+    width: 55.55555556px;
+    height: 12.5px;
+    z-index: 10;
+  }
+  .cobertura:after,
+  .cobertura:before {
+    background: #ece7e3;
+    border-radius: 100px;
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 10px;
+  }
+  .cobertura:after {
+    top: 6.66666667px;
+    right: 14.28571429px;
+  }
+  .cobertura:before {
+    top: 10px;
+    right: 9.09090909px;
+  }
+  /* ============================================== BIZCOCHO
+  */
+  .bizcocho {
+    background: #6d3826;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -25px;
+    width: 50px;
+    height: 33.33333333px;
+  }
+  .bizcocho:after,
+  .bizcocho:before {
+    background: rgba(236, 231, 227, 0.6);
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 5px;
+  }
+  .bizcocho:after {
+    top: 30%;
+    left: 0;
+  }
+  .bizcocho:before {
+    top: 60%;
+    left: 0;
+  }
